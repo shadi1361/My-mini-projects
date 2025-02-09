@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+}
+
+.homeWrapper h2{
+    text-align: right;
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.articles{
+    display: flex;
+    justify-content: space-between;   
+    flex-wrap: wrap;
+}
+.articles a{
+    width: 24%;
+}
