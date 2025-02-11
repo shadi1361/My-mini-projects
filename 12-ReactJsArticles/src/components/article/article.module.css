@@ -2,7 +2,7 @@
     aspect-ratio: 3;
     border-radius: 3px;
     margin-bottom: 10px;
-    box-shadow: 0px 3px 5px #bebcbc; 
+    box-shadow: 0px 3px 5px #bebcbc;
     line-height: 13px;
    }
    .articleWrapper img{
@@ -11,15 +11,15 @@
        border-radius: 1%;
    }
    .articleWrapper{
-      padding: 5px; 
+      padding: 5px;
    }
    .articleWrapper p{
-       padding-top: 5px;  
+       padding-top: 5px;
        color: #777;
    }
    .articleWrapper h3{
-       font-size: 20px;    
-       padding-top: 5px;        
+       font-size: 20px;
+       padding-top: 5px;
    }
    .para{
        font-size: 16px;

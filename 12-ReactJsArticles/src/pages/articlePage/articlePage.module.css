@@ -13,8 +13,9 @@
 }
 .articleWrapper img{
     width: 50%;
-    height: 300px;
-    margin-bottom: 5px;
+    height: 70%;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 .articleWrapper p{
     text-align: left;
@@ -25,7 +26,7 @@
     display: flex;
     justify-content: start;
     margin-bottom: 10px;
- 
+
 }
 .articleInfo span{
     margin-left: 10px;

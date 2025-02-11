@@ -1,7 +1,6 @@
 import styled from './article.module.css';
 
 function Article(props) {
-    //console.log(props);oder console.log(props.data);oder console.log(props.data.title);میشه پراپرتیاروجدا داد
 
     return (
         <div className={styled.articleWrapper}>
