@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.homeWrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.homeWrapper h2 {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: stretch; /* Ensure all articles have the same height */
+}
+
+.articles a {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Add some space between rows */
+    padding: 10px; /* Optional: Add some padding inside each article */
+    background-color: #fff; /* Optional: Set a background color for each article */
+}
