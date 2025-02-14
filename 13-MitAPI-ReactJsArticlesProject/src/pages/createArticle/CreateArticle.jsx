@@ -2,23 +2,30 @@ import { useState } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import styled from "./createArticle.module.css";
 import Input from "../../components/input/Input";
+import TextArea from "../../components/textArea/TextArea";
 
 function CreateArticle() {
   const [article, setArticle] = useState({
     title: "",
     date: "",
     readingTime: "",
-    author: ""
+    author: "",
+    message:"",
   });
 
   const handleChangeArticle = (e) => {
-    console.log(e.target.name, e.target.value);
-
     setArticle((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value
     }));
   };
+
+  const handleChangeArticleMessage=(e) =>{
+    setArticle((prevState) => ({
+      ...prevState,
+      message: e.target.value,
+    }));
+  }
 
   console.log(article);
   return (
@@ -48,6 +55,8 @@ function CreateArticle() {
             handleChange={handleChangeArticle}
             type="text"
           />
+
+          <TextArea label="Notizen" handleChange={handleChangeArticleMessage} />
         </div>
       </div>
     </>

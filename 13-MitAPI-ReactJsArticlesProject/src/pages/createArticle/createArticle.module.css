@@ -1,7 +1,6 @@
 .createArticlePage h1 {
     margin: 40px 0;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 500;
     text-align: left; /* Ensure the text is left-aligned */
 }
-

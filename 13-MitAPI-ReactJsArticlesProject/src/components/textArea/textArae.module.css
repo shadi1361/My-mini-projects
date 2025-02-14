@@ -1,18 +1,20 @@
-.inputWrapper{
-    margin-bottom: 20px;
+.textAreaWrapper {
+
 }
 
-.inputWrapper label {
+
+.textAreaWrapper label{
     display: block;
     margin-bottom: 5px;
     text-align: left;
 }
 
-.inputWrapper input {
+.textAreaWrapper Textarea{
     width: 100%;
-    padding: 10px;
+    min-height: 200px;
     border: 1px solid #ccc;
-    text-align: left;
     border-radius: 3px;
+    margin-bottom: 30px;
+    padding:10px 10px;
 }
 

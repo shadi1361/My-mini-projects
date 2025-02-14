@@ -2,7 +2,7 @@ import Navbar from "../../components/navbar/Navbar";
 import styled from "./about.module.css";
 import Firma from "./../../assets/images/firma.jpg";
 import { Fragment } from "react";
-import Input from "../../components/input/Input";
+
 
 function AboutUs() {
   return (
