@@ -28,15 +28,15 @@ html, body {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-grow: 1;
-    align-items: stretch; /* Ensure all articles have the same height */
+    align-items: stretch; 
 }
 
 .articles a {
-    width: 24%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 20px; /* Add some space between rows */
-    padding: 10px; /* Optional: Add some padding inside each article */
-    background-color: #fff; /* Optional: Set a background color for each article */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
 }

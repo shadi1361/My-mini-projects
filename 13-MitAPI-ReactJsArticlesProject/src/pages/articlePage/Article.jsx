@@ -1,6 +1,5 @@
 import Navbar from "../../components/navbar/Navbar";
 import styled from "./articlePage.module.css";
-import Footer from "../../components/footer/Footer";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -47,7 +46,7 @@ function ArticlePage() {
         </div>
       </div>
 
-      <Footer />
+
     </>
   );
 }
