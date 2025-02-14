@@ -3,6 +3,7 @@ import Navbar from "../../components/navbar/Navbar";
 import styled from "./createArticle.module.css";
 import Input from "../../components/input/Input";
 import TextArea from "../../components/textArea/TextArea";
+import axios from "axios";
 
 function CreateArticle() {
   const [article, setArticle] = useState({
@@ -10,7 +11,8 @@ function CreateArticle() {
     date: "",
     readingTime: "",
     author: "",
-    message:"",
+    message: "",
+    ImageURL: ""
   });
 
   const handleChangeArticle = (e) => {
@@ -20,14 +22,25 @@ function CreateArticle() {
     }));
   };
 
-  const handleChangeArticleMessage=(e) =>{
+  const handleChangeArticleMessage = (e) => {
     setArticle((prevState) => ({
       ...prevState,
-      message: e.target.value,
+      message: e.target.value
     }));
-  }
+  };
 
-  console.log(article);
+  const handleCreateNewArticle = () => {
+    axios.post("http://localhost:8000/articles", {
+      id: 9,
+      imageUrl: article.imageURL,
+      title: article.title,
+      readingTime: article.readingTime,
+      autor: article.author,
+      date: article.date,
+      content: article.message
+    });
+  };
+
   return (
     <>
       <Navbar title="Shadi Blog" />
@@ -47,7 +60,6 @@ function CreateArticle() {
             name="readingTime"
             handleChange={handleChangeArticle}
             type="text"
-
           />
           <Input
             label="Autor:"
@@ -56,7 +68,18 @@ function CreateArticle() {
             type="text"
           />
 
+          <Input
+            label="Fotoadresse:"
+            name="imageURL"
+            handleChange={handleChangeArticle}
+            type="text"
+          />
+
           <TextArea label="Notizen" handleChange={handleChangeArticleMessage} />
+
+          <div className="{styled.buttonWrapper}">
+            <button onClick={handleCreateNewArticle}>ساخت مقاله</button>
+          </div>
         </div>
       </div>
     </>
